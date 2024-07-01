@@ -1,0 +1,39 @@
+<!-- https://studiomeal.com/archives/197 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container{
+            display: flex;  /* 부모에 flex 선언을 함 */
+            /* background-color: black; */
+            width: 300;
+            justify-content: center;
+            flex-direction: column; /* 1. 주축방향을 결정 */
+        }
+        .flex-container > div{
+            border: 1px solid black;
+            background-color: #f1f1f1;
+            width: 200px;
+            height: 100px;
+            text-align: left;
+            line-height: 75px;
+            font-size: 30px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+
+    </div>/.flex-container
+
+</body>
+</html>
