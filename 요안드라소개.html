@@ -13,9 +13,14 @@
       #wrapper {
         width: 900px;
         margin: 0 auto; /* BLOCK을 화면 중앙에 배치*/
+        border: 1px solid rgb(66, 61, 61);
+        background-color:#ffffff;
       }
 
       header {
+      }
+
+      article{
         width: 100%;
         height: 300px;
 
@@ -26,14 +31,14 @@
         background-position: right center; /* 배경이미지 위치 left/right/center & top/center/bottom */
       }
       
-      header h1{
+      article h1{
         position: absolute;
         right: 30px;
         bottom: 100px;
         font-size: 2em;
         color: white;
       }
-      header h2{
+      article h2{
         position: absolute;
         right: 30px;
         bottom: 60px;
@@ -41,13 +46,12 @@
         color: yellow;
       }
       nav{
-        position: absolute;
-        top: 300px;
+        position: relative;
 
         width: 100%;
-        height: 80px;
+        height: 60px;
         background-color: black;
-        margin-top: -15px;
+        margin-top: -30px;
       }
 
       header nav ul li {
@@ -63,13 +67,43 @@
       }
 
       header nav ul li a:hover {
-        color: yellow;
+        color:yellow;
       }
 
-      main {
-        position: relative; /* 원래 기준 위치에서 지정한 위치에서 배치,위치지정이 없으면 원래 기준 위치 */
-        
-        }
+      main{
+        position: absolute;
+      }
+      main section{
+            float: left;
+            width: 600px; 
+            border: 1px solid #928a8a;
+            margin: 10px;
+            padding: 10px;
+      }
+
+      main section #banner{
+        width: 500px;
+      }  
+      main aside{
+            width: 200px;
+            height: 600px;
+            float: right;
+            border: 1px solid #928a8a;
+            margin: 10px;
+            background-color: rgb(18, 206, 12);
+            padding: 10px;
+      }
+
+      footer {
+        width: 100%;
+        height: 120px;
+
+        clear: both;
+        background-color: black;
+        text-align: center;
+        color: white;
+        padding: 10px;
+      }      
 
     </style>
 </head>
@@ -77,8 +111,10 @@
 <body>
     <div id="wrapper">
         <header>
-            <h1>Joandora</h1>
-            <h2>가장 제주다운 수산리집</h2>
+            <article>
+                <h1>Joandora</h1>
+                <h2>가장 제주다운 수산리집</h2>
+            </article>
             <nav>
                 <ul>
                     <li><a href="#">이용 안내</a></li>
@@ -92,7 +128,6 @@
         <main>
             <section>
                 <h1>요안도라 소개</h1>
-                <div id="content">
                     <h3>¤ 요안도라는 게스트 하우스(Guest House) 형식의 농어촌 민박입니다.</h3>
                     <p>성산의 날씨는 다음주 내내 높은 구름에 햇살 가득이라고 합니다.목요일이면 섭씨 27도까지 오른다고 하지만, 
                       늘 부는 바람이 쾌적한 균형을 잡아 마당에 마당에 나가 앉아 있는 시간이 많아질듯 합니다.</p>
@@ -103,7 +138,6 @@
                     <div id="banner">
                         <img src="images/banner2.png">
                     </div>
-                </div>    
             </section>
 
             <aside>
@@ -116,14 +150,9 @@
             </aside>
 
         <footer>
-            <div id="footer">
-                <div>
                     <p>제주특별자치도 남제주군 성산읍 수산리 000 번지 요안도라</p>
                     <p>yoan##@naver.com</p>
-                </div>
-                <p id="copy">Copyright ⓒ. All rights reserved.</p>
-                </div>
-            </div>
+                    <p> Copyright ⓒ. All rights reserved.</p>
         </footer>    
     </div>
 </body>
