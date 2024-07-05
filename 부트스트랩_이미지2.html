@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title>Hello, world!</title>
+</head>
+
+<body>
+    <div class="container mt-3 overflow-hidden">  <!-- overflow-hidden 의 단점은 반응형이 아님-->
+        <h2>Aligning images</h2>
+        <p>Use the float classes to float the image to the left or to the right:</p>
+        <img src="https://www.w3schools.com/bootstrap5/paris.jpg" class="float-start" alt="Paris" width="304" height="236">
+        <img src="https://www.w3schools.com/bootstrap5/paris.jpg" class="float-end" alt="Paris" width="304" height="236">
+    </div>
+
+    <hr>
+
+    <!-- 부트스트랩 flex를 이용한 사진 중앙정렬방법 -->
+    <div class="container mt-3">
+        <h2>Aligning images</h2>
+        <p>Use the float classes to float the image to the left or to the right:</p>
+        <div  class="d-flex justify-content-center">
+            <img src="https://www.w3schools.com/bootstrap5/paris.jpg" alt="Paris" width="304" height="236">
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="container mt-3">
+        <h2>Aligning images</h2>
+        <p>Use the float classes to float the image to the left or to the right:</p>
+        <div  class="d-flex justify-content-around">  <!-- justify-content 옵션5개 사용방법 인지(start end center between around) -->
+            <img src="https://www.w3schools.com/bootstrap5/paris.jpg" alt="Paris" width="304" height="236">
+            <img src="https://www.w3schools.com/bootstrap5/paris.jpg" alt="Paris"  width="304" height="236">
+        </div>
+    </div>
+
+    <hr>    
+
+</body>
+
+</html>
